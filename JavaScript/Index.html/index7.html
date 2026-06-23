@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa de Mercado</title>
+</head>
+
+<body>
+
+<script>
+
+let produto = prompt("Digite o nome do produto:")
+
+let preco = prompt("Digite o preço do produto:")
+
+// troca vírgula por ponto
+preco = preco.replace(",", ".")
+
+// converte para número
+preco = Number(preco)
+
+let quantidade = Number(prompt("Digite a quantidade:"))
+
+// cálculo do total
+let total = preco * quantidade
+
+console.log(`Produto: ${produto}`)
+console.log(`Preço: R$ ${preco}`)
+console.log(`Quantidade: ${quantidade}`)
+console.log(`Valor total: R$ ${total}`)
+
+document.write(`<h2>Resumo da Compra</h2>`)
+document.write(`Produto: ${produto} <br>`)
+document.write(`Preço: R$ ${preco} <br>`)
+document.write(`Quantidade: ${quantidade} <br>`)
+document.write(`Valor total: R$ ${total}`)
+
+</script>
+
+</body>
+</html>

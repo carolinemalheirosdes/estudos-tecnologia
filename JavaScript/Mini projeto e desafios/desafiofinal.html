@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema</title>
+</head>
+<body>
+    <script>
+        let nome= prompt("Digite o nome do cliente: ")
+        let produto= prompt("Digite o nome do produto: ")
+        let preco= Number(prompt("Digite o preço do produto: "))
+        let quant= Number(prompt("Digite quantidade do produto: "))
+        let desc= Number(prompt("Porcentagem de desconto: "))
+        let subtotal= quant * preco
+        let desconto= preco * subtotal / 100
+        let total= subtotal - desconto
+
+            console.log(nome)
+            console.log(produto)
+            console.log(preco)
+            console.log(quant)
+            console.log(desc)
+            console.log(subtotal)
+            console.log(desconto)
+            console.log(total)
+
+                document.write(`Sistema de cadastro<br>`)
+                document.write(`Cliente: ${nome}<br>`)
+                document.write(`Nome do Produto: ${produto}<br>`)
+                document.write(`Valor do produto: ${preco}<br>`)
+                document.write(`Quantidade do produto: ${quant}<br>`)
+                document.write(`Porcentagem do desconto: ${desc} % <br>`)
+                document.write(`Subtotal: ${subtotal}<br>`)
+                document.write(`Valor do desconto: ${desconto}<br>`)
+                document.write(`Total da nota: ${total}<br>`)
+    </script>
+</body>
+</html>>

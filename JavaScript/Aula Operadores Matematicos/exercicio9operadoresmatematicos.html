@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro pessoa</title>
+</head>
+<body>
+    <script>
+        const nome= prompt("Digite o nome do cliente: ")
+        const datadenascimento= Number(prompt("Digite a data de nascimento: "))
+        let endereco= prompt("Digite o endereço sem o numero do cliente: ")
+        let numeroendereco= Number(prompt("Digite o numero do endereço: "))
+        let bairro= prompt("Bairro e Cidade/UF: ")
+        const cpfcliente= Number(prompt("Digite o CPF: "))
+            console.log(nome)
+            console.log(datadenascimento)
+            console.log(endereco)
+            console.log(numeroendereco)
+            console.log(bairro)
+            console.log(cpfcliente)
+
+            document.write(`Nome do cliente: ${nome}<br>`)
+            document.write(`Data de nascimento: ${datadenascimento}<br>`)
+            document.write(`Endereço: ${endereco}, nº ${numeroendereco} - ${bairro}<br>`)
+            document.write(`CPFdo cliente: ${cpfcliente}`)
+    </script>
+</body>
+</html>>
