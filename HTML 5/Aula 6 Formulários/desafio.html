@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required><br><br>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required><br><br>
+
+        <p>Sexo:</p>
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="feminino" name="sexo" value="feminino">
+        <label for="feminino">Feminino</label><br><br>
+
+        <p>Produtos de interesse:</p>
+        <input type="checkbox" id="roupas" name="produtos[]" value="roupas">
+        <label for="roupas">Roupas</label><br>
+        <input type="checkbox" id="calcados" name="produtos[]" value="calcados">
+        <label for="calcados">Calçados</label><br>
+        <input type="checkbox" id="acessorios" name="produtos[]" value="acessorios">
+        <label for="acessorios">Acessórios</label><br><br>
+
+        <button type="submit">Cadastrar</button>
+</body>
+</html>
