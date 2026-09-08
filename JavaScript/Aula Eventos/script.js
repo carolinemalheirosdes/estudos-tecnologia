@@ -7,6 +7,6 @@ botao.addEventListener("click", function() {
 const botaoMouse = document.querySelector("#botaoMouse");
 
 botaoMouse.addEventListener("mouseover", function() {
-    alert("O mouse passou por cima do botão!");
+    alert("O mouse passou por cima!");
 });
 
