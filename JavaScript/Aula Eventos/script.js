@@ -16,6 +16,7 @@ botaoMouse.addEventListener("mouseout", function() {
 
 const campo = document.querySelector("#campo");
 
-campo.addEventListener("keydown", function() {
-    alert("Você pressionou uma tecla!");
+
+campo.addEventListener("keydown", function(event) {
+    console.log("Tecla pressionada:", event.key);
 });
