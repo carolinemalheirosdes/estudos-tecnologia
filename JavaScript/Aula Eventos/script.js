@@ -25,7 +25,23 @@ campo.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         alert("Você confirmou a ação!");
     }
+});
+
+const formulario = document.querySelector("#formulario");
+
+formulario.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    console.log("Formulário enviado!");
 
 });
 
+campo.addEventListener("input", function() {
+    console.log("Você está digitando!");
+});
+
+campo.addEventListener("input", function() {
+    console.log(campo.value);
+});
 
