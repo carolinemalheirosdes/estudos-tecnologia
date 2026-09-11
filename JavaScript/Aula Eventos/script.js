@@ -20,3 +20,12 @@ campo.addEventListener("keydown", function(event) {
     console.log("Tecla pressionada:", event.key);
 });
 
+campo.addEventListener("keydown", function(event) {
+
+    if (event.key === "Enter") {
+        alert("Você confirmou a ação!");
+    }
+
+});
+
+
